@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "Blocking Behavior",
+      "setup": "",
+      "run": "./mvnw test -Dtest=BoundedBufferTest#testPutBlocksWhenFull,BoundedBufferTest#testTakeBlocksWhenEmpty",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Single Producer-Consumer",
+      "setup": "",
+      "run": "./mvnw test -Dtest=BoundedBufferTest#testSingleProducerConsumer",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Multiple Producers",
+      "setup": "",
+      "run": "./mvnw test -Dtest=BoundedBufferTest#testMultipleProducers",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Multiple Consumers",
+      "setup": "",
+      "run": "./mvnw test -Dtest=BoundedBufferTest#testMultipleConsumers",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Multiple Producers and Consumers",
+      "setup": "",
+      "run": "./mvnw test -Dtest=BoundedBufferTest#testMultipleProducersAndConsumers",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Thread Safety and Stress Test",
+      "setup": "",
+      "run": "./mvnw test -Dtest=BoundedBufferTest#testThreadSafetyNoRaceConditions,BoundedBufferTest#testStressWithManyThreads",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
