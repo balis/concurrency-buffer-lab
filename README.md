@@ -1,14 +1,6 @@
 # Concurrent Programming Lab: Bounded Buffer
 
-## Learning Objectives
-
-In this lab, you will:
-- Understand and implement thread synchronization using Java's `wait()`, `notify()`, and `notifyAll()` methods
-- Learn about the producer-consumer problem and bounded buffers
-- Practice writing thread-safe code
-- Debug common concurrency issues like race conditions and deadlocks
-
-## Background
+## Introduction
 
 A **bounded buffer** is a classic synchronization problem in concurrent programming. It's a fixed-size buffer that:
 - Allows producers to add items
@@ -24,7 +16,7 @@ You must implement the `BoundedBuffer` class that provides thread-safe operation
 
 # Getting Started
 
-1. Clone your repository
+1. Clone the repository
 2. Implement the methods in [src/main/java/BoundedBuffer.java](src/main/java/BoundedBuffer.java)
 3. Test locally: `./mvnw test`
 4. Run the demo: `./mvnw exec:java`
